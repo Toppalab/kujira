@@ -23,19 +23,13 @@ echo 'export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin' >> $HOME/.profile
 source .profile
 ```
 
-Node Installation
-
-Node Name
-
-Your Node Name
-Port prefix
-
-118
-# Clone project repository
+**Clone project repository**
+```
 cd && rm -rf core
 git clone https://github.com/Team-Kujira/core
 cd core
 git checkout v1.1.0
+```
 
 # Build binary
 make install
