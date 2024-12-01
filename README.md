@@ -31,8 +31,10 @@ cd core
 git checkout v1.1.0
 ```
 
-# Build binary
+**Build binary**
+```
 make install
+```
 
 # Prepare cosmovisor directories
 mkdir -p $HOME/.kujira/cosmovisor/genesis/bin
