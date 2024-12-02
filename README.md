@@ -36,9 +36,11 @@ git checkout v1.1.0
 make install
 ```
 
-# Prepare cosmovisor directories
+**Prepare cosmovisor directories**
+```
 mkdir -p $HOME/.kujira/cosmovisor/genesis/bin
 ln -s $HOME/.kujira/cosmovisor/genesis $HOME/.kujira/cosmovisor/current -f
+```
 
 # Copy binary to cosmovisor directory
 cp $(which kujirad) $HOME/.kujira/cosmovisor/genesis/bin
