@@ -42,8 +42,10 @@ mkdir -p $HOME/.kujira/cosmovisor/genesis/bin
 ln -s $HOME/.kujira/cosmovisor/genesis $HOME/.kujira/cosmovisor/current -f
 ```
 
-# Copy binary to cosmovisor directory
+**Copy binary to cosmovisor directory**
+```
 cp $(which kujirad) $HOME/.kujira/cosmovisor/genesis/bin
+```
 
 # Set node CLI configuration
 kujirad config chain-id kaiyo-1
