@@ -47,10 +47,12 @@ ln -s $HOME/.kujira/cosmovisor/genesis $HOME/.kujira/cosmovisor/current -f
 cp $(which kujirad) $HOME/.kujira/cosmovisor/genesis/bin
 ```
 
-# Set node CLI configuration
+**Set node CLI configuration**
+```
 kujirad config chain-id kaiyo-1
 kujirad config keyring-backend file
 kujirad config node tcp://localhost:11857
+```
 
 # Initialize the node
 kujirad init "Your Node Name" --chain-id kaiyo-1
