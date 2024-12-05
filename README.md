@@ -54,8 +54,10 @@ kujirad config keyring-backend file
 kujirad config node tcp://localhost:11857
 ```
 
-# Initialize the node
+**Initialize the node**
+```
 kujirad init "Your Node Name" --chain-id kaiyo-1
+```
 
 # Download genesis and addrbook files
 curl -L https://snapshots.nodejumper.io/kujira/genesis.json > $HOME/.kujira/config/genesis.json
