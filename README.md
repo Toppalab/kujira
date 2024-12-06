@@ -59,9 +59,11 @@ kujirad config node tcp://localhost:11857
 kujirad init "Your Node Name" --chain-id kaiyo-1
 ```
 
-# Download genesis and addrbook files
+**Download genesis and addrbook files**
+```
 curl -L https://snapshots.nodejumper.io/kujira/genesis.json > $HOME/.kujira/config/genesis.json
 curl -L https://snapshots.nodejumper.io/kujira/addrbook.json > $HOME/.kujira/config/addrbook.json
+```
 
 # Set seeds
 sed -i -e 's|^seeds *=.*|seeds = "ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@seeds.polkachu.com:11856,20e1000e88125698264454a884812746c2eb4807@seeds.lavenderfive.com:11856,322abfd7c0bcdf8a3d98ccb46ae2572bae0e8301@seed-kujira.starsquid.io:15602,824fa337b806bd48ce9505d74ba3e5adea80da93@seeds.goldenratiostaking.net:1628,ebc272824924ea1a27ea3183dd0b9ba713494f83@kujira-mainnet-seed.autostake.com:26796,400f3d9e30b69e78a7fb891f60d76fa3c73f0ecc@kujira.rpc.kjnodes.com:11359,8542cd7e6bf9d260fef543bc49e59be5a3fa9074@seed.publicnode.com:26656,654ba97f74254965a80c0fac0f277f6f6e5506b6@seed-node.mms.team:29656,10ed1e176d874c8bb3c7c065685d2da6a4b86475@seed-kujira.ibs.team:16678,ebc272824924ea1a27ea3183dd0b9ba713494f83@kujira-mainnet-peer.autostake.com:26796"|' $HOME/.kujira/config/config.toml
