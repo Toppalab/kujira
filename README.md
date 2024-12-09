@@ -84,8 +84,10 @@ sed -i \
   $HOME/.kujira/config/app.toml
 ```
 
-# Enable prometheus
+**Enable prometheus**
+```
 sed -i -e 's|^prometheus *=.*|prometheus = true|' $HOME/.kujira/config/config.toml
+```
 
 # Change ports
 sed -i -e "s%:1317%:11817%; s%:8080%:11880%; s%:9090%:11890%; s%:9091%:11891%; s%:8545%:11845%; s%:8546%:11846%; s%:6065%:11865%" $HOME/.kujira/config/app.toml
