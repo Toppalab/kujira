@@ -89,9 +89,11 @@ sed -i \
 sed -i -e 's|^prometheus *=.*|prometheus = true|' $HOME/.kujira/config/config.toml
 ```
 
-# Change ports
+**Change ports**
+```
 sed -i -e "s%:1317%:11817%; s%:8080%:11880%; s%:9090%:11890%; s%:9091%:11891%; s%:8545%:11845%; s%:8546%:11846%; s%:6065%:11865%" $HOME/.kujira/config/app.toml
 sed -i -e "s%:26658%:11858%; s%:26657%:11857%; s%:6060%:11860%; s%:26656%:11856%; s%:26660%:11861%" $HOME/.kujira/config/config.toml
+```
 
 # Download latest chain data snapshot
 curl "https://snapshots.nodejumper.io/kujira/kujira_latest.tar.lz4" | lz4 -dc - | tar -xf - -C "$HOME/.kujira"
