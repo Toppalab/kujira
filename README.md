@@ -105,7 +105,8 @@ curl "https://snapshots.nodejumper.io/kujira/kujira_latest.tar.lz4" | lz4 -dc - 
 go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.6.0
 ```
 
-# Create a service
+**Create a service**
+```
 sudo tee /etc/systemd/system/kujira.service > /dev/null << EOF
 [Unit]
 Description=Kujira node service
@@ -126,6 +127,7 @@ WantedBy=multi-user.target
 EOF
 sudo systemctl daemon-reload
 sudo systemctl enable kujira.service
+```
 
 # Start the service and check the logs
 sudo systemctl start kujira.service
